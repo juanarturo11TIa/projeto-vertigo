@@ -10,6 +10,7 @@
     --gray-400: #94a3b8;
     --gray-200: #e2e8f8;
     --purple: #7c3eed;
+    --white: #fff;
 }
 
 header {
@@ -75,6 +76,11 @@ main {
     color: var(--gray-400);
 }
 
+.login input:hover,
+.login input:focus {
+    outline: 1px solid var(--purple);
+}
+
 .login a {
     color: var(--purple);
     text-decoration: none;
@@ -84,4 +90,16 @@ main {
 
 .login a:hover {
     text-decoration: underline;
+}
+
+.login button {
+    margin-top: 1rem;
+    padding-block: 1rem;
+    width: 100%;
+    background: var(--purple);
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
 }
